@@ -4,6 +4,9 @@ demshin Infra repository
 
 ## Homework 4
 
+testapp_IP = 35.228.78.194
+testapp_port = 9292
+
 ## Scripts
 
 Scripts `install_mongodb.sh`, `install_ruby.sh` & `deploy.sh` created.
