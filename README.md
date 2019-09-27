@@ -6,10 +6,8 @@ demshin Infra repository
 
 ### Bastion
 
-```bash
 bastion_IP = 35.228.78.194
 someinternalhost_IP = 10.166.0.3
-```
 
 Connect to `someinternalhost` with `ProxyJump` option.
 
