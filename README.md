@@ -32,6 +32,6 @@ Then run:
 
 ```bash
 ssh someinternalhost
-```bash
+```
 
 PROFIT!
