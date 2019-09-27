@@ -40,4 +40,4 @@ Pritunl works.
 
 ### Additional task Pritunl
 
-Pritunl works with correct ssl certs.
+Pritunl works with correct ssl certs with sslip.io & Let's Encrypt services'.
