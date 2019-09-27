@@ -27,7 +27,7 @@ gcloud compute instances create reddit-app-2\
   --metadata-from-file startup-script=./startup.sh
 ```
 
-### Additional task. Startup script as local file
+### Additional task. Startup script as remote url
 
 ```bash
 gcloud compute instances create reddit-app-2\
@@ -48,8 +48,6 @@ gcloud compute firewall-rules create default-puma-server\
   --allow=tcp:9292 \
   --target-tags=puma-server
 ```
-
-## 
 
 ## Homework 3
 
