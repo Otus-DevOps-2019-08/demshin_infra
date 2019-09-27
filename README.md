@@ -17,7 +17,7 @@ Connect to `someinternalhost` with `ProxyJump` option.
 ssh -i ~/.ssh/appuser -A -J appuser@35.228.78.194 appuser@10.166.0.3
 ```
 
-### Additional task
+### Additional task Bastion
 
 This solution uses `ProxyJump` option too. First you need to add some configuration to ssh config:
 
