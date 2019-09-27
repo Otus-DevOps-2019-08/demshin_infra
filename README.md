@@ -2,6 +2,13 @@
 
 demshin Infra repository
 
+## Homework 5 Packer
+
+Build simple image with packer.
+```bash
+packer build ubuntu16.json
+```
+
 ## Homework 4
 
 testapp_IP = 35.228.78.194
