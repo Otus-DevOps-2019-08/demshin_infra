@@ -35,3 +35,11 @@ ssh someinternalhost
 ```
 
 PROFIT!
+
+## VPN Server
+
+Pritunl works.
+
+### Additional task Pritunl
+
+Pritunl works with correct ssl certs.
