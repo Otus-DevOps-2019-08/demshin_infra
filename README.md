@@ -7,12 +7,30 @@ demshin Infra repository
 Build simple image with packer.
 
 ```bash
+packer validate ubuntu16.json
 packer build ubuntu16.json
 ```
 
 ### Parameterization of the template
 
-Parameterization of the template with user variables. See `"variables"` section at file `ubuntu16.json` and file `variables.json`. Create `variables.json` from `variables.json.example`.
+Parameterization of the template with user variables. See `"variables"` section at file `ubuntu16.json` and file `variables.json`. Create `variables.json` from `variables.json.example`. To run:
+
+```bash
+packer validate -var-file=variables.json ubuntu16.json
+packer build -var-file=variables.json ubuntu16.json
+```
+
+### Additional task. Immutable infrastructure
+
+Creating template `immutable.json` with user variables `variables-reddit-full.json` (see `variables-reddit-full.json.example`), additional files at `files` directory.
+
+### Additional task. Script for create & start reddit vm
+
+To run:
+
+```bash
+sh create-reddit-vm.sh
+```
 
 ## Homework 4. Cloud app
 
