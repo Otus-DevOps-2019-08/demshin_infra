@@ -5,11 +5,16 @@ demshin Infra repository
 ## Homework 5. Packer
 
 Build simple image with packer.
+
 ```bash
 packer build ubuntu16.json
 ```
 
-## Homework 4
+### Parameterization of the template
+
+Parameterization of the template with user variables. See `"variables"` section at file `ubuntu16.json` and file `variables.json`. Create `variables.json` from `variables.json.example`.
+
+## Homework 4. Cloud app
 
 testapp_IP = 35.228.78.194
 testapp_port = 9292
