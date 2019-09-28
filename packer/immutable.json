@@ -1,0 +1,46 @@
+{
+    "variables": {
+        "project_id": null,
+        "source_image_family": null,
+        "machine_type": "f1-micro",
+        "image_description": "Image with reddit app",
+        "disk_type": "pd-ssd",
+        "disk_size": null,
+        "network": "default",
+        "tags": "reddit"
+    },
+    "builders": [{
+        "type": "googlecompute",
+        "project_id": "{{user `project_id`}}",
+        "image_name": "reddit-full-{{timestamp}}",
+        "image_family": "reddit-full",
+        "source_image_family": "{{user `source_image_family`}}",
+        "zone": "europe-west3-b",
+        "ssh_username": "appuser",
+        "machine_type": "{{user `machine_type`}}",
+        "image_description": "{{user `image_description`}}",
+        "disk_type": "{{user `disk_type`}}",
+        "disk_size": "{{user `disk_size`}}"
+    }],
+    "provisioners": [{
+            "type": "file",
+            "source": "files/reddit.system",
+            "destination": "/tmp/reddit.system"
+        },
+        {
+            "type": "shell",
+            "script": "files/reddit.system.sh",
+            "execute_command": "sudo {{.Path}}"
+        },
+        {
+            "type": "shell",
+            "script": "files/reddit.enable.service.sh",
+            "execute_command": "sudo {{.Path}}"
+        },
+        {
+            "type": "shell",
+            "script": "files/deploy.sh",
+            "execute_command": "{{.Path}}"
+        }
+    ]
+}
