@@ -2,7 +2,7 @@
 
 demshin Infra repository
 
-## Homework 5 Packer
+## Homework 5. Packer
 
 Build simple image with packer.
 ```bash
@@ -56,7 +56,7 @@ gcloud compute firewall-rules create default-puma-server\
   --target-tags=puma-server
 ```
 
-## Homework 3
+## Homework 3. Bastion & vpn
 
 ### Bastion
 
