@@ -1,0 +1,5 @@
+{
+    "project_id": "infra-id",
+    "source_image_family": "base-distro-version",
+    "disk_size": "100"
+}
