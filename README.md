@@ -13,6 +13,10 @@ demshin Infra repository
 - using provisioners (file & remote exec)
 - using input variables
 
+## Additional task. Working with metadata
+
+Add ssh keys to project metadata with `resource "google_compute_project_metadata"`.
+
 ## Homework 5. Packer
 
 Build simple image with packer.
