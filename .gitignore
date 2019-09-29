@@ -1,3 +1,8 @@
 .vscode
 packer/variables.json
 packer/variables-reddit-full.json
+*.tfstate
+*.tfstate.*.backup
+*.tfstate.backup
+*.tfvars
+.terraform/
