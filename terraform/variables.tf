@@ -23,3 +23,7 @@ variable private_key_path {
 variable disk_image {
   description = "Disk image"
 }
+
+variable number_app_instances {
+  description = "Number of app instances"
+}
