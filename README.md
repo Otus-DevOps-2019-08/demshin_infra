@@ -16,6 +16,7 @@ demshin Infra repository
 ### Additional task. Working with metadata
 
 Add ssh keys to project metadata with `resource "google_compute_project_metadata"`.
+When we adding key at the GCP web console and run `terraform apply` after that, the added key is overwritten.
 
 ## Homework 5. Packer
 
