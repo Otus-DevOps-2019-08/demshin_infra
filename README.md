@@ -2,6 +2,17 @@
 
 demshin Infra repository
 
+## Homework 6. Terraform-194
+
+- terraform installing
+- using terraform provider google
+- creating resources (instance, firewall) with terraform
+- working with terraform state
+- using metadata for ssh keys
+- using outputs
+- using provisioners (file & remote exec)
+- using input variables
+
 ## Homework 5. Packer
 
 Build simple image with packer.
