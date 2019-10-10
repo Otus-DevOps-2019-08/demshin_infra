@@ -2,7 +2,7 @@
 
 demshin Infra repository
 
-## Homework 6. Terraform-194
+## Homework 6. Terraform-1
 
 - terraform installing
 - using terraform provider google
