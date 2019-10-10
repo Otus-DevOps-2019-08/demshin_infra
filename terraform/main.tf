@@ -8,7 +8,7 @@ provider "google" {
 }
 
 resource "google_compute_instance" "app" {
-  name         = "reddit-app"#-${count.index}"
+  name         = "reddit-app" #-${count.index}"
   machine_type = "g1-small"
   zone         = var.zone
   tags         = ["reddit-app"]
@@ -50,6 +50,17 @@ resource "google_compute_firewall" "firewall_puma" {
   }
   source_ranges = ["0.0.0.0/0"]
   target_tags   = ["reddit-app"]
+}
+
+resource "google_compute_firewall" "firewall_ssh" {
+  name    = "default-allow-ssh"
+  network = "default"
+  allow {
+    protocol = "tcp"
+    ports    = ["22"]
+  }
+  description   = "Allow SSH from anywhere"
+  source_ranges = ["0.0.0.0/0"]
 }
 
 resource "google_compute_project_metadata" "user_key" {
