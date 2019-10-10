@@ -20,7 +20,9 @@ resource "google_compute_instance" "app" {
   }
   network_interface {
     network = "default"
-    access_config {}
+    access_config {
+      nat_ip = google_compute_address.app_ip.address
+    }
   }
   metadata = {
     ssh-keys = "appuser:${file(var.public_key_path)}"
@@ -39,6 +41,10 @@ resource "google_compute_instance" "app" {
   provisioner "remote-exec" {
     script = "files/deploy.sh"
   }
+}
+
+resource "google_compute_address" "app_ip" {
+  name = "reddit-app-ip"
 }
 
 resource "google_compute_firewall" "firewall_puma" {
