@@ -20,6 +20,7 @@ Created remote backends at prod & stage environments with `backend "gcs"`.
 
 - add provisioners
 - add output variable for internal db IP address
+- allow external connection to install_mongodb
 
 ## Homework 6. Terraform-1
 
