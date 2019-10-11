@@ -21,6 +21,10 @@ module db {
   db_disk_image   = var.db_disk_image
 }
 
+module vpc {
+  source = "./modules/vpc"
+}
+
 resource "google_compute_project_metadata" "user_key" {
   metadata = {
     ssh-keys = <<EOF
