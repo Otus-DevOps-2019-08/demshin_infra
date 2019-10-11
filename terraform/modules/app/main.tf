@@ -29,6 +29,13 @@ resource "google_compute_instance" "app" {
     source      = "${path.module}/files/puma.service"
     destination = "/tmp/puma.service"
   }
+
+  provisioner "remote-exec" {
+    inline = [
+      "echo export DATABASE_URL=\"${var.db_address}\" >> ~/.profile"
+    ]
+  }
+
   provisioner "remote-exec" {
     script = "${path.module}/files/deploy.sh"
   }
