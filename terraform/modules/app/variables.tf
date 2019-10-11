@@ -3,7 +3,7 @@ variable public_key_path {
 }
 
 variable zone {
-    description = "Zone"
+  description = "Zone"
 }
 
 variable app_disk_image {
