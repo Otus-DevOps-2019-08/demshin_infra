@@ -12,6 +12,15 @@ demshin Infra repository
 - create environments (prod & stage)
 - create bucket with module
 
+### Additional task. Remote backends
+
+Created remote backends at prod & stage environments with `backend "gcs"`.
+
+### Additional task. Provisioners in modules
+
+- add provisioners
+- add output variable for internal db IP address
+
 ## Homework 6. Terraform-1
 
 - terraform installing
