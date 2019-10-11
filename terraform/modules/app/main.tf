@@ -3,7 +3,7 @@ resource "google_compute_instance" "app" {
   machine_type = "g1-small"
   zone         = var.zone
   tags         = ["reddit-app"]
-  count        = var.number_app_instances
+  #count        = var.number_app_instances
   boot_disk {
     initialize_params {
       image = var.app_disk_image
