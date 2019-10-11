@@ -1,9 +1,5 @@
 project = "project-id"
-
 public_key_path = "~/.ssh/appuser.pub"
-
-disk_image = "name_of_base_image"
-
 private_key_path = "~/.ssh/appuser"
-
+db_disk_image = "name_of_base_image"
 zone = "zone"
