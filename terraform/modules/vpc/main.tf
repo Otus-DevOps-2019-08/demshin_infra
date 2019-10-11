@@ -6,5 +6,5 @@ resource "google_compute_firewall" "firewall_ssh" {
     ports    = ["22"]
   }
   description   = "Allow SSH from anywhere"
-  source_ranges = ["0.0.0.0/0"]
+  source_ranges = var.source_ranges
 }
