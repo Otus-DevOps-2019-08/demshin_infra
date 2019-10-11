@@ -2,6 +2,16 @@
 
 demshin Infra repository
 
+## Homework-7. Terraform-2
+
+- import firewall rules
+- create packer images `app.json` & `db.json`
+- separate `app.tf`, `db.tf` & `vpc.tf` from `main.tf`
+- create modules app, db, vpc
+- parameterization of vpc module with source_ranges
+- create environments (prod & stage)
+- create bucket with module
+
 ## Homework 6. Terraform-1
 
 - terraform installing
