@@ -7,7 +7,7 @@ provider "google" {
 module "storage-bucket" {
   source  = "SweetOps/storage-bucket/google"
   version = "0.3.0"
-  name    = "demshin-otus-tfstate"
+  name    = "demshin-otus"
   location = var.region
 }
 
