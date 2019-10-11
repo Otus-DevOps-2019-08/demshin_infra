@@ -14,3 +14,7 @@ variable app_disk_image {
   description = "Disk image for reddit app"
   default     = "reddit-app-base"
 }
+
+variable db_address {
+  description = "ip of db host"
+}
