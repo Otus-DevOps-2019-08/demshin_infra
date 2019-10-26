@@ -2,7 +2,27 @@
 
 demshin Infra repository
 
-## Homework 6. Terraform-194
+## Homework-7. Terraform-2
+
+- import firewall rules
+- create packer images `app.json` & `db.json`
+- separate `app.tf`, `db.tf` & `vpc.tf` from `main.tf`
+- create modules app, db, vpc
+- parameterization of vpc module with source_ranges
+- create environments (prod & stage)
+- create bucket with module
+
+### Additional task. Remote backends
+
+Created remote backends at prod & stage environments with `backend "gcs"`.
+
+### Additional task. Provisioners in modules
+
+- add provisioners
+- add output variable for internal db IP address
+- allow external connection to install_mongodb
+
+## Homework 6. Terraform-1
 
 - terraform installing
 - using terraform provider google
