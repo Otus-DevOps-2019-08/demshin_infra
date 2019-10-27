@@ -6,3 +6,4 @@ packer/variables-reddit-full.json
 *.tfstate.backup
 *.tfvars
 .terraform/
+ansible/key.json
