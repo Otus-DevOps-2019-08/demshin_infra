@@ -9,7 +9,7 @@ When you start the playbook in the first case, the directory with the code was a
 ### Additional task. Dynamic inventory
 
 Working with Dynamic inventory via GCP Inventory plugin.
-1. Install `reqests` and `google-auth` with command `pip3 install requests google-auth`.
+1. Install `requests` and `google-auth` with command `pip3 install requests google-auth`.
 2. See `inventory.gcp.yml`.
 3. Get `key.json` with command `gcloud iam service-accounts keys create ~/key.json --iam-account [SA-NAME]@[PROJECT-ID].iam.gserviceaccount.com`.
 4. To check run `ansible-inventory -i inventory.gcp.yml --graph` or `ansible -i inventory.gcp.yml all -m ping`.
