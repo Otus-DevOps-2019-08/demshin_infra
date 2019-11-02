@@ -2,6 +2,14 @@
 
 demshin Infra repository
 
+## Homework-9. Ansible-2
+
+1. Creating Ansible Play for configure db & app hosts, deploy app.
+2. Then creating multiple Plays.
+3. Separate multiple play in different plays.
+4. Use dynamic inventory.
+5. Provisioning packer with ansible.
+
 ## Homework-8. Ansible-1
 
 When you start the playbook in the first case, the directory with the code was already there, so there were no changes, and in the second it was deleted, and you saw that the change appeared. But the result is the same in both cases.
