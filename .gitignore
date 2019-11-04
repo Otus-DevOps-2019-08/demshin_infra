@@ -7,3 +7,4 @@ packer/variables-reddit-full.json
 *.tfvars
 .terraform/
 ansible/key.json
+*.retry
