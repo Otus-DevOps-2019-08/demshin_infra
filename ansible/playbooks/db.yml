@@ -1,5 +1,5 @@
 - name: Configure db hosts
   hosts: db
-  become: true  
+  become: true
   roles:
     - db
