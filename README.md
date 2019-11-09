@@ -2,6 +2,19 @@
 
 demshin Infra repository
 
+## Homework-10. Ansible-3
+
+1. Creating roles for db & app.
+2. Using community roles from Ansible Galaxy. Setup Nginx.
+3. Open port 80 with Terraform
+4. Working with Ansible Vault.
+
+### Additional task *
+
+Using dynamic inventory.
+
+### Additional task 2. TravisCI
+
 ## Homework-9. Ansible-2
 
 1. Creating Ansible Play for configure db & app hosts, deploy app.
