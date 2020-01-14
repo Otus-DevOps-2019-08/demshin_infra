@@ -14,6 +14,7 @@ ROOT_DIR="$(pwd)"
 
 # terraform validate
 
+which terraform
 cd "${ROOT_DIR}"/terraform
 terraform validate
 cd "${ROOT_DIR}"/terraform/prod
