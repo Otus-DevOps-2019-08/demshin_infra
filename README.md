@@ -18,6 +18,8 @@ Using dynamic inventory.
 ### Additional task 2. TravisCI
 
 1. Add packer validate
+2. Add ansible-lint
+3. Add terraform validate
 
 ## Homework-9. Ansible-2
 
