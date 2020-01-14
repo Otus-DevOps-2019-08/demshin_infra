@@ -11,15 +11,25 @@ ROOT_DIR="$(pwd)"
 curl https://releases.hashicorp.com/terraform/0.12.19/terraform_0.12.19_linux_amd64.zip -o /tmp/terraform.zip
 sudo unzip /tmp/terraform.zip -d /usr/bin
 
-# terraform validate
+# Install tflint
+curl https://raw.githubusercontent.com/wata727/tflint/master/install_linux.sh | bash
+
+# tflint & terraform validate
 
 cd "${ROOT_DIR}"/terraform
+tflint
+terraform get
+terraform init -backend=false
 terraform validate
 cd "${ROOT_DIR}"/terraform/prod
+tflint
+terraform get
+terraform init -backend=false
 terraform validate
 cd "${ROOT_DIR}"/terraform/stage
+tflint
+terraform get
+terraform init -backend=false
 terraform validate
-
-# tflint
 
 cd "${ROOT_DIR}"/terraform
