@@ -14,11 +14,11 @@ sudo unzip /tmp/terraform.zip -d /usr/bin
 # terraform validate
 
 cd "${ROOT_DIR}"/terraform
-/usr/local/bin/terraform validate
+terraform validate
 cd "${ROOT_DIR}"/terraform/prod
-/usr/local/bin/terraform validate
+terraform validate
 cd "${ROOT_DIR}"/terraform/stage
-/usr/local/bin/terraform validate
+terraform validate
 
 # tflint
 
