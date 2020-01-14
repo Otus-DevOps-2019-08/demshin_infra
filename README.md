@@ -15,6 +15,8 @@ Using dynamic inventory.
 
 ### Additional task 2. TravisCI
 
+1. Add packer validate
+
 ## Homework-9. Ansible-2
 
 1. Creating Ansible Play for configure db & app hosts, deploy app.
