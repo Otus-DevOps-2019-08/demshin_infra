@@ -14,13 +14,12 @@ ROOT_DIR="$(pwd)"
 
 # terraform validate
 
-which terraform
 cd "${ROOT_DIR}"/terraform
-terraform validate
+/usr/local/bin/terraform validate
 cd "${ROOT_DIR}"/terraform/prod
-terraform validate
+/usr/local/bin/terraform validate
 cd "${ROOT_DIR}"/terraform/stage
-terraform validate
+/usr/local/bin/terraform validate
 
 # tflint
 
