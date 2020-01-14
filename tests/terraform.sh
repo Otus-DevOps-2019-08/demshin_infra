@@ -15,21 +15,14 @@ sudo unzip /tmp/terraform.zip -d /usr/bin
 curl https://raw.githubusercontent.com/wata727/tflint/master/install_linux.sh | bash
 
 # tflint & terraform validate
-
+echo "================================"
+echo "Terraform Validate"
+echo "================================"
 cd "${ROOT_DIR}"/terraform
-tflint
-terraform get
-terraform init -backend=false
-terraform validate
+tflint && terraform get && terraform init -backend=false && terraform validate
 cd "${ROOT_DIR}"/terraform/prod
-tflint
-terraform get
-terraform init -backend=false
-terraform validate
+tflint && terraform get && terraform init -backend=false && terraform validate
 cd "${ROOT_DIR}"/terraform/stage
-tflint
-terraform get
-terraform init -backend=false
-terraform validate
+tflint && terraform get && terraform init -backend=false && terraform validate
 
 cd "${ROOT_DIR}"/terraform

@@ -6,6 +6,7 @@ before_install:
     bash
   - ./tests/packer.sh
   - ./tests/terraform.sh
+  - ./tests/ansible.sh
 notifications:
   slack:
     rooms:
