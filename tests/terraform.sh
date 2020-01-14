@@ -4,11 +4,17 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
+$ROOT_DIR=pwd
+
 # terraform validate
 
-cd terraform
+cd $ROOT_DIR/terraform
 terraform validate
-cd prod
+cd $ROOT_DIR/terraform/prod
 terraform validate
-cd ../stage
+cd $ROOT_DIR/terraform/stage
 terraform validate
+
+# tflint
+
+cd $ROOT_DIR/terraform
