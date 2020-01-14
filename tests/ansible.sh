@@ -7,6 +7,6 @@ set -o nounset
 ROOT_DIR="$(pwd)"
 
 # install ansible
-pip install --upgrade pip
-pip install ansible
-pip install ansible-lint
+sudo pip install --upgrade pip
+sudo pip install ansible
+sudo pip install ansible-lint
