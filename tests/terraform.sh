@@ -12,7 +12,7 @@ curl https://releases.hashicorp.com/terraform/0.12.19/terraform_0.12.19_linux_am
 sudo unzip /tmp/terraform.zip -d /usr/bin
 
 # Install tflint
-curl https://raw.githubusercontent.com/wata727/tflint/master/install_linux.sh | bash
+curl -L "$(curl -Ls https://api.github.com/repos/terraform-linters/tflint/releases/latest | grep -o -E "https://.+?_linux_amd64.zip")" -o tflint.zip && unzip tflint.zip && rm tflint.zip
 
 # tflint & terraform validate
 echo "================================"
