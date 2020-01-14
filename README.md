@@ -2,6 +2,8 @@
 
 demshin Infra repository
 
+[![Build Status](https://travis-ci.com/Otus-DevOps-2019-08/demshin_infra.svg?branch=master)](https://travis-ci.com/Otus-DevOps-2019-08/demshin_infra)
+
 ## Homework-10. Ansible-3
 
 1. Creating roles for db & app.
