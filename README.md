@@ -10,8 +10,9 @@ demshin Infra repository
 2. Parametrize db role.
 3. Parametrize app role.
 4. Add nginx parameters to Vagrantfile (task with *).
-5. Init molecule
-6. 
+5. Init molecule.
+6. Test for db role (port 27017).
+7. Roles db & app for packer templates.
 
 ## Homework-10. Ansible-3
 
