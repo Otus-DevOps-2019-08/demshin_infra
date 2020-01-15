@@ -8,3 +8,5 @@ packer/variables-reddit-full.json
 .terraform/
 ansible/key.json
 *.retry
+jdauphant.nginx
+vault.key

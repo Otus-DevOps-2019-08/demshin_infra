@@ -2,6 +2,25 @@
 
 demshin Infra repository
 
+[![Build Status](https://travis-ci.com/Otus-DevOps-2019-08/demshin_infra.svg?branch=master)](https://travis-ci.com/Otus-DevOps-2019-08/demshin_infra)
+
+## Homework-10. Ansible-3
+
+1. Creating roles for db & app.
+2. Using community roles from Ansible Galaxy. Setup Nginx.
+3. Open port 80 with Terraform
+4. Working with Ansible Vault.
+
+### Additional task *
+
+Using dynamic inventory.
+
+### Additional task 2. TravisCI
+
+1. Add packer validate
+2. Add ansible-lint
+3. Add terraform validate
+
 ## Homework-9. Ansible-2
 
 1. Creating Ansible Play for configure db & app hosts, deploy app.

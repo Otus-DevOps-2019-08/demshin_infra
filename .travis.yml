@@ -2,8 +2,11 @@ dist: trusty
 sudo: required
 language: bash
 before_install:
-- curl https://raw.githubusercontent.com/express42/otus-homeworks/2019-08/run.sh |
-  bash
+  - curl https://raw.githubusercontent.com/express42/otus-homeworks/2019-08/run.sh |
+    bash
+  - ./tests/packer.sh
+  - ./tests/ansible.sh
+  - ./tests/terraform.sh
 notifications:
   slack:
     rooms:
