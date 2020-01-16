@@ -4,6 +4,16 @@ demshin Infra repository
 
 [![Build Status](https://travis-ci.com/Otus-DevOps-2019-08/demshin_infra.svg?branch=master)](https://travis-ci.com/Otus-DevOps-2019-08/demshin_infra)
 
+## Homework-11. Ansible-4
+
+1. Init vagrant.
+2. Parametrize db role.
+3. Parametrize app role.
+4. Add nginx parameters to Vagrantfile (task with *).
+5. Init molecule.
+6. Test for db role (port 27017).
+7. Roles db & app for packer templates.
+
 ## Homework-10. Ansible-3
 
 1. Creating roles for db & app.

@@ -1,0 +1,10 @@
+---
+- name: check & install python
+  hosts: all
+  become: true
+  gather_facts: false
+
+  tasks:
+    - name: Install Python for Ansible
+      raw: test -e /usr/bin/python || (apt -y update && apt-get install -y python-minimal)
+      changed_when: false
